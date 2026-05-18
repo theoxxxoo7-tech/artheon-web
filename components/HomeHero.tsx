@@ -1,7 +1,6 @@
 import Container from "./Container";
 import Eyebrow from "./Eyebrow";
 import DualCTA from "./DualCTA";
-import ImagePlaceholder from "./ImagePlaceholder";
 
 /**
  * Editorial split hero used on the homepage. V2 uses the dual-CTA system:
@@ -17,16 +16,12 @@ export default function HomeHero({
   sub,
   primaryCta,
   secondaryCta,
-  image,
-  imageLabel = "",
 }: {
   eyebrow?: string;
   headline: string;
   sub?: string;
   primaryCta?: { label: string; href: string };
   secondaryCta?: { label: string; href: string };
-  image?: string;
-  imageLabel?: string;
 }) {
   return (
     <section className="relative bg-canvas border-b border-stone-200/60 overflow-hidden">
@@ -37,14 +32,11 @@ export default function HomeHero({
           {/* Visual — mobile first, desktop right */}
           <div className="order-1 lg:order-2 lg:col-span-6">
             <div className="relative">
-              <ImagePlaceholder
-                tone="dark"
-                ratio="4/5"
-                src={image}
+              <img
+                src="/images/hero-main.png"
                 alt="Premium modern bathroom interior, warm lighting"
-                label={imageLabel}
-                priority
-                className="shadow-[0_30px_60px_-30px_rgba(26,26,26,0.45)]"
+                className="w-full h-auto rounded-sm shadow-[0_30px_60px_-30px_rgba(26,26,26,0.45)]"
+                loading="eager"
               />
               <span className="absolute -top-2 -left-2 hidden sm:block w-6 h-6 border-l border-t border-brass-500" aria-hidden />
               <span className="absolute -bottom-2 -right-2 hidden sm:block w-6 h-6 border-r border-b border-brass-500" aria-hidden />

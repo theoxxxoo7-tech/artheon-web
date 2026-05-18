@@ -25,7 +25,6 @@ export default function HomePage() {
         sub={homepage.hero.sub}
         primaryCta={homepage.hero.primaryCta}
         secondaryCta={homepage.hero.secondaryCta}
-        image={homepage.hero.image}
       />
 
       {/* Intro — single, organised point of contact */}
