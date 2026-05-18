@@ -416,7 +416,7 @@ export const consultationPage = {
 
 export const faqs = [
   { q: "What areas do you cover?", a: "Our primary area is Reading. We take selective projects in Wokingham, Bracknell and Maidenhead. If you are nearby, ask — we will be straight with you about whether we are a fit." },
-  { q: "What is the minimum project value?", a: "We work on projects from £8,000 upwards. Our Essential Refresh bathroom package starts at £8,995 and Signature Renovation at £13,995. For other project types, pricing is confirmed after consultation." },
+  { q: "What is the minimum project value?", a: "Pricing is confirmed after consultation and survey, based on scope, specification and project complexity. We are transparent about what we can and cannot take on." },
   { q: "What happens in a consultation?", a: "A 30-minute conversation by phone or video. We listen first, ask a few useful questions, and recommend a next step — a survey, a different specialist, or more thinking time. No sales pressure." },
   { q: "How does the survey work?", a: "We attend on site for around 45–60 minutes, measure the space accurately, inspect plumbing, electrics and moisture, and discuss what is realistic. After that, we send a written quote." },
   { q: "How long does a renovation take?", a: "Most bathroom projects take a number of weeks on site, depending on scope and finish level. Kitchens and wider renovations vary. We confirm a realistic timeline at quote stage rather than at first contact." },

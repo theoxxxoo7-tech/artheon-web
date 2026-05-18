@@ -75,13 +75,13 @@ export default function SurveyRequestForm({ defaultPackage }: { defaultPackage?:
 
       <Fieldset legend="Your project">
         <Select id="preferredPackage" label="Preferred package" defaultValue={defaultPackage} options={[
-          ...packages.map((p) => ({ value: p.slug, label: `${p.name} — from ${p.startingFrom}` })),
+          ...packages.map((p) => ({ value: p.slug, label: p.name })),
           { value: "unsure", label: "Not sure yet" },
         ]} />
         <Select id="budget" label="Estimated budget" required hint="Honest budget bands help us be straight with you." options={[
-          { value: "8-10k", label: "£8,000 – £10,000" }, { value: "10-14k", label: "£10,000 – £14,000" },
-          { value: "14-18k", label: "£14,000 – £18,000" }, { value: "18-25k", label: "£18,000 – £25,000" },
-          { value: "25k+", label: "£25,000 +" }, { value: "below-8k", label: "Below £8,000 (we cannot help)" },
+          { value: "small", label: "Small project" }, { value: "medium", label: "Medium project" },
+          { value: "large", label: "Large project" }, { value: "major", label: "Major project" },
+          { value: "very-large", label: "Very large project" }, { value: "unsure", label: "Just researching / not sure yet" },
         ]} />
         <Select id="timeline" label="Desired timeline" required options={[
           { value: "asap", label: "As soon as possible" }, { value: "1-3m", label: "Within 1–3 months" },

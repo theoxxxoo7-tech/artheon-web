@@ -9,12 +9,10 @@ import ProjectSelector from "@/components/ProjectSelector";
 import SafePairOfHands from "@/components/SafePairOfHands";
 import LeadMagnet from "@/components/LeadMagnet";
 import VisualProcess from "@/components/VisualProcess";
-import BeforeAfter from "@/components/BeforeAfter";
 import VisualTrust from "@/components/VisualTrust";
-import DualCTA from "@/components/DualCTA";
 import {
   homepage, faqs, projectTypes, safePairOfHands, leadMagnet,
-  visualProcess, beforeAfter, visualTrust,
+  visualProcess, visualTrust,
 } from "@/lib/content";
 import { packages } from "@/lib/packages";
 
@@ -110,24 +108,6 @@ export default function HomePage() {
 
       {/* Lead magnet — the renovation guide */}
       <LeadMagnet {...leadMagnet} source="homepage" />
-
-      {/* Before / After placeholder */}
-      <Section tone="canvas">
-        <Container>
-          <div className="mb-12 max-w-3xl">
-            <SectionHeader
-              eyebrow={beforeAfter.eyebrow}
-              eyebrowDot
-              title={beforeAfter.title}
-              body={beforeAfter.body}
-            />
-          </div>
-          <BeforeAfter pairs={beforeAfter.pairs} />
-          <p className="mt-10 text-xs text-stone-500 max-w-prose2 tracking-tightish">
-            {beforeAfter.note}
-          </p>
-        </Container>
-      </Section>
 
       {/* Visual trust — 6 standards */}
       <Section tone="paper">

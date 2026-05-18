@@ -44,12 +44,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-stone-700/60 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-stone-300/70">
           <p>
-            &copy; {year} {site.legalName}. Registered in England &amp; Wales.{" "}
-            {site.company.companiesHouse ? (
-              <span className="text-stone-300/50">Company no. {site.company.companiesHouse}</span>
-            ) : (
-              <span className="text-stone-300/50">Company details pending.</span>
-            )}
+            &copy; {year} {site.legalName}. Registered in England &amp; Wales.
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-canvas">Privacy</Link>

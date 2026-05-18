@@ -220,12 +220,12 @@ export default function ConsultationForm({
               hint="Honest bands help us be straight with you."
               value={data.budget} onChange={(v) => set("budget", v)} error={errors.budget}
               options={[
-                { value: "8-12k", label: "£8,000 – £12,000" },
-                { value: "12-18k", label: "£12,000 – £18,000" },
-                { value: "18-25k", label: "£18,000 – £25,000" },
-                { value: "25-40k", label: "£25,000 – £40,000" },
-                { value: "40k+", label: "£40,000 +" },
-                { value: "below-8k", label: "Below £8,000 (we cannot help)" },
+                { value: "small", label: "Small project" },
+                { value: "medium", label: "Medium project" },
+                { value: "large", label: "Large project" },
+                { value: "major", label: "Major project" },
+                { value: "very-large", label: "Very large project" },
+                { value: "unsure", label: "Just researching / not sure yet" },
               ]}
             />
           </div>
@@ -459,3 +459,4 @@ function Choice({
     </button>
   );
 }
+

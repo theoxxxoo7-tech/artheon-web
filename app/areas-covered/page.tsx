@@ -71,7 +71,7 @@ export default function AreasPage() {
         <Container>
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-5">
-              <ImagePlaceholder tone="warm" ratio="4/5" label="Replace with map illustration or Reading street photography" />
+              <ImagePlaceholder tone="warm" ratio="4/5" />
             </div>
             <div className="lg:col-span-7">
               <SectionHeader

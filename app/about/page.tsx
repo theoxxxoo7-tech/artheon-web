@@ -38,7 +38,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="lg:col-span-5">
-              <ImagePlaceholder tone="stone" ratio="3/4" label="Founder & site photography to follow" />
+              <ImagePlaceholder tone="stone" ratio="3/4" />
             </div>
           </div>
         </Container>

@@ -26,7 +26,6 @@ export default function PackageCard({
           ratio="16/9"
           src={pkg.image}
           alt={`${pkg.name} — example bathroom mood`}
-          label="Replace with real Artheon project image"
         />
         {isFeature && (
           <span className="absolute top-4 right-4 text-[10px] uppercase tracking-[0.2em] text-canvas bg-stone-900 px-2.5 py-1.5">
@@ -47,18 +46,13 @@ export default function PackageCard({
           {pkg.idealClient}
         </p>
 
-        {/* Pricing */}
-        <div className="mt-6 pt-6 border-t border-stone-200 flex items-end justify-between gap-4">
-          <div>
-            <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
-              Starting from
-            </p>
-            <p className="mt-1 font-serif text-3xl sm:text-4xl tracking-tightish text-stone-900">
-              {pkg.startingFrom}
-            </p>
-          </div>
-          <p className="text-xs text-stone-500 max-w-[14ch] text-right leading-snug">
-            Final pricing confirmed after on-site survey
+        {/* Pricing placeholder — removed until real pricing is confirmed */}
+        <div className="mt-6 pt-6 border-t border-stone-200">
+          <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
+            Pricing
+          </p>
+          <p className="mt-2 text-sm text-stone-600 leading-relaxed">
+            Pricing is confirmed after consultation and survey, based on scope, specification and project complexity.
           </p>
         </div>
 

@@ -18,7 +18,7 @@ export default function HomeHero({
   primaryCta,
   secondaryCta,
   image,
-  imageLabel = "Replace with real Artheon project photography",
+  imageLabel = "",
 }: {
   eyebrow?: string;
   headline: string;
@@ -74,9 +74,9 @@ export default function HomeHero({
             {/* Quiet inline data strip */}
             <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md text-sm">
               <div>
-                <dt className="text-xs uppercase tracking-[0.18em] text-stone-500">From</dt>
-                <dd className="mt-1 font-serif text-2xl tracking-tightish text-stone-900">£8,995</dd>
-                <dd className="text-[10px] uppercase tracking-[0.18em] text-stone-400">Bathroom packages</dd>
+                <dt className="text-xs uppercase tracking-[0.18em] text-stone-500">Pricing</dt>
+                <dd className="mt-1 font-serif text-2xl tracking-tightish text-stone-900">On request</dd>
+                <dd className="text-[10px] uppercase tracking-[0.18em] text-stone-400">After consultation</dd>
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-[0.18em] text-stone-500">Area</dt>

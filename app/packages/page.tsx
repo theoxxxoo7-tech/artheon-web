@@ -13,7 +13,7 @@ import { packages } from "@/lib/packages";
 export const metadata: Metadata = {
   title: "Bathroom renovation packages",
   description:
-    "Two clear bathroom renovation packages from Artheon LTD: Essential Refresh from £8,995 and Signature Renovation from £13,995.",
+    "Two clear bathroom renovation packages from Artheon LTD. Pricing is confirmed after consultation and survey, based on scope, specification and project complexity.",
 };
 
 export default function PackagesPage() {
@@ -35,24 +35,6 @@ export default function PackagesPage() {
             ))}
           </div>
           <p className="mt-12 max-w-prose2 text-sm text-stone-500 leading-relaxed">{packagesPage.note}</p>
-        </Container>
-      </Section>
-
-      <Section tone="paper" size="compact">
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <p className="text-xs uppercase tracking-[0.22em] text-stone-500 mb-4">The minimum</p>
-              <h2 className="font-serif text-3xl sm:text-4xl tracking-tighter2 text-stone-900">
-                Minimum project value: £8,000
-              </h2>
-            </div>
-            <div className="lg:col-span-7">
-              <p className="text-stone-600 leading-relaxed max-w-prose2">
-                We take on bathroom projects from £8,000 upwards. Below that, we simply cannot deliver the level of finish and project organisation we want our name attached to. We&rsquo;d rather be straight with you than waste your time.
-              </p>
-            </div>
-          </div>
         </Container>
       </Section>
 
