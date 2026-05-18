@@ -40,7 +40,6 @@ export default function LeadMagnet({
               <ImagePlaceholder
                 tone="warm"
                 ratio="3/4"
-                label="Replace with real guide cover artwork"
                 className="shadow-[0_24px_60px_-30px_rgba(26,26,26,0.5)]"
               />
               <span

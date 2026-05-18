@@ -22,7 +22,6 @@ export default function VisualProcess({ steps }: { steps: VisualStep[] }) {
             ratio="3/4"
             src={s.image}
             alt={`${s.title} — survey stage placeholder`}
-            label="Replace with real survey photography"
           />
           <div className="mt-5 flex items-baseline gap-3">
             <span className="font-serif text-xl text-brass-500 tabular-nums">

@@ -28,7 +28,6 @@ export default function SafePairOfHands({
             <ImagePlaceholder
               tone="dark"
               ratio="4/5"
-              label="Replace with real on-site Artheon photography"
               className="lg:sticky lg:top-24"
             />
           </div>
