@@ -243,7 +243,7 @@ export const packagesPage = {
     headline: "Two packages. One realistic conversation.",
     sub: "Both packages cover a full bathroom renovation. The difference is the level of finish, the scope of upgrades, and the depth of design guidance.",
   },
-  note: "Final pricing is confirmed after an on-site survey. Starting prices reflect typical project scope and do not include major structural work, bespoke joinery, or specialist finishes.",
+  note: "Pricing is confirmed after consultation and survey, based on scope, specification and project complexity.",
 };
 
 /**
