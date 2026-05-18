@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-16 sm:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="font-serif text-3xl tracking-tighter2">Artheon</p>
+            <img src="/images/logo.png" alt="Artheon" className="h-10 w-auto object-contain invert brightness-200" />
             <div className="mt-3 h-px w-10 bg-brass-500" aria-hidden />
             <p className="mt-5 max-w-prose2 text-stone-200/80 text-sm leading-relaxed">
               Premium bathroom renovations across Reading and Berkshire.
