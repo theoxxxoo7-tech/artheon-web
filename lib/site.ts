@@ -10,22 +10,22 @@ export const site = {
     "Artheon LTD is a premium renovation management company in Reading, Berkshire. We plan, coordinate and deliver bathroom, kitchen and interior renovations with a calm, organised, single-point-of-contact process.",
   url: "https://www.artheon.co.uk", // __PLACEHOLDER__ — update with final domain
   contact: {
-    phone: "__PLACEHOLDER__",
-    phoneHref: "tel:+44000000000",
+    phone: "",
+    phoneHref: "",
     email: "hello@artheon.co.uk",
     emailHref: "mailto:hello@artheon.co.uk",
     address: {
-      line1: "__PLACEHOLDER__",
+      line1: "",
       city: "Reading",
       county: "Berkshire",
-      postcode: "__PLACEHOLDER__",
+      postcode: "",
       country: "United Kingdom",
     },
     hours: "Monday – Friday, 9:00 – 17:30",
   },
   company: {
-    companiesHouse: "__PLACEHOLDER__",
-    vat: "__PLACEHOLDER__",
+    companiesHouse: "",
+    vat: "",
   },
   geo: {
     // Approximate Reading town centre — replace with registered address geocode

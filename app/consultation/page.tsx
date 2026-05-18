@@ -94,12 +94,14 @@ export default function ConsultationPageRoute({
                     {site.contact.email}
                   </a>
                 </div>
-                <div>
-                  <p className="text-stone-500">Phone</p>
-                  <a href={site.contact.phoneHref} className="font-medium text-stone-900 hover:text-stone-700">
-                    {site.contact.phone}
-                  </a>
-                </div>
+                {site.contact.phone && (
+                  <div>
+                    <p className="text-stone-500">Phone</p>
+                    <a href={site.contact.phoneHref} className="font-medium text-stone-900 hover:text-stone-700">
+                      {site.contact.phone}
+                    </a>
+                  </div>
+                )}
                 <div>
                   <p className="text-stone-500">Office hours</p>
                   <p className="text-stone-800">{site.contact.hours}</p>

@@ -33,7 +33,9 @@ export default function Footer() {
             <p className="text-xs uppercase tracking-[0.2em] text-stone-300/70 mb-4">Get in touch</p>
             <ul className="space-y-2 text-sm text-stone-200/90">
               <li><a href={site.contact.emailHref} className="hover:text-canvas">{site.contact.email}</a></li>
-              <li><a href={site.contact.phoneHref} className="hover:text-canvas">{site.contact.phone}</a></li>
+              {site.contact.phone && (
+                <li><a href={site.contact.phoneHref} className="hover:text-canvas">{site.contact.phone}</a></li>
+              )}
               <li className="pt-2">{site.contact.address.city}, {site.contact.address.county}</li>
               <li className="text-stone-300/70">{site.contact.hours}</li>
             </ul>
@@ -43,7 +45,11 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-stone-700/60 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-stone-300/70">
           <p>
             &copy; {year} {site.legalName}. Registered in England &amp; Wales.{" "}
-            <span className="text-stone-300/50">Company no. {site.company.companiesHouse}</span>
+            {site.company.companiesHouse ? (
+              <span className="text-stone-300/50">Company no. {site.company.companiesHouse}</span>
+            ) : (
+              <span className="text-stone-300/50">Company details pending.</span>
+            )}
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-canvas">Privacy</Link>
