@@ -44,7 +44,7 @@ export default function HomeHero({
           </div>
 
           {/* Text */}
-          <div className="order-2 lg:order-1 lg:col-span-6 flex flex-col justify-center">
+          <div className="order-2 lg:order-1 lg:col-span-5 flex flex-col justify-center">
             {eyebrow && (
               <Eyebrow withDot className="mb-6">{eyebrow}</Eyebrow>
             )}

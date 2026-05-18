@@ -9,7 +9,7 @@ export default function Logo({ tone = "dark" }: { tone?: "dark" | "light" }) {
       <img
         src="/images/logo.png"
         alt="Artheon"
-        className="h-14 w-auto object-contain"
+        className="h-20 w-auto object-contain"
       />
     </Link>
   );
