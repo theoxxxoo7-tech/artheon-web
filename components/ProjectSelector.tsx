@@ -41,7 +41,6 @@ export default function ProjectSelector({
             <ImagePlaceholder
               tone={p.tone}
               ratio="3/2"
-              label="Replace with real Artheon project image"
             />
             {p.featured && (
               <span className="absolute top-3 left-3 text-[10px] uppercase tracking-[0.22em] text-stone-900 bg-canvas/85 backdrop-blur-sm px-2.5 py-1.5">
