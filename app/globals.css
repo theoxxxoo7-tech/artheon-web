@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-canvas text-stone-900 font-sans;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background-color: #3A3833;
+    color: #FAF8F5;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif text-stone-900;
+    font-feature-settings: "ss01";
+  }
+
+  input, select, textarea, button {
+    @apply font-sans;
+  }
+
+  .hairline {
+    @apply border-stone-200;
+  }
+}
+
+@layer components {
+  /* ---------- Material placeholders ----------
+     Each tone evokes a different bathroom material direction
+     so the site has atmosphere even before real photography lands. */
+
+  .mat-stone {
+    background-color: #D9D5CC;
+    background-image:
+      radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 55%),
+      radial-gradient(ellipse at 80% 70%, rgba(58,56,51,0.10) 0%, rgba(58,56,51,0) 50%),
+      linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(58,56,51,0.05) 100%);
+  }
+
+  .mat-warm {
+    background-color: #E8DFCF;
+    background-image:
+      radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 55%),
+      linear-gradient(160deg, rgba(196,184,165,0.35) 0%, rgba(232,223,207,0) 70%);
+  }
+
+  .mat-dark {
+    background-color: #2A2825;
+    background-image:
+      radial-gradient(circle at 25% 30%, rgba(212,185,140,0.18) 0%, rgba(212,185,140,0) 45%),
+      radial-gradient(circle at 70% 75%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 40%),
+      linear-gradient(180deg, #2A2825 0%, #1A1A1A 100%);
+  }
+
+  .mat-brass {
+    background-color: #C9A574;
+    background-image:
+      linear-gradient(135deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0) 30%),
+      linear-gradient(180deg, rgba(160,126,84,0.0) 0%, rgba(133,102,65,0.55) 100%);
+  }
+
+  /* Fluted glass — vertical hairline striping */
+  .mat-fluted {
+    background-color: #E2DDD3;
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.55) 0px,
+        rgba(255,255,255,0.55) 1px,
+        rgba(58,56,51,0.06) 1px,
+        rgba(58,56,51,0.06) 14px
+      ),
+      linear-gradient(180deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  }
+
+  /* Large-format tile — soft squared grid */
+  .mat-tile {
+    background-color: #EFEBE3;
+    background-image:
+      linear-gradient(rgba(58,56,51,0.10) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(58,56,51,0.10) 1px, transparent 1px),
+      radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 55%);
+    background-size: 64px 64px, 64px 64px, 100% 100%;
+  }
+
+  /* Soft warm glow used for "lit" placeholders (LED niche, ambient) */
+  .mat-glow {
+    background-color: #2A2825;
+    background-image:
+      radial-gradient(ellipse at 50% 60%, rgba(232,223,207,0.45) 0%, rgba(232,223,207,0) 55%),
+      linear-gradient(180deg, #1F1E1B 0%, #2A2825 100%);
+  }
+
+  /* Subtle vertical hairline used for premium dividers */
+  .hairline-y {
+    background: linear-gradient(180deg, rgba(160,126,84,0) 0%, rgba(160,126,84,0.45) 50%, rgba(160,126,84,0) 100%);
+  }
+
+  /* Brass accent dot — used in eyebrows / list bullets */
+  .brass-dot {
+    @apply inline-block w-1.5 h-1.5 rounded-full bg-brass-500;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
